@@ -1,5 +1,39 @@
 .. SPDX-License-Identifier: AGPL-3.0-or-later
 
+======================
+IMPORTANT ANNOUNCEMENT
+======================
+
+I wanted to share a personal update with the community: I have shifted my
+active development focus away from this project to a new search tool I
+have been building called `Hister <https://github.com/asciimoo/hister>`_.
+
+Why?
+----
+
+Searx is a metasearch engine, which means it is fundamentally dependent on
+third-party search engines. This creates inherent limitations that are
+difficult to solve within the current architecture:
+
+- Results are only as good as what upstream engines expose
+- Privacy guarantees are partial because requests still leave your machine
+- Relevance ranking is limited to what scraped results provide
+- There is no persistent memory of what you have already read or found useful
+
+Hister takes a different approach. Instead of querying other engines, it
+indexes content you choose (web pages, local files, browser history) into a
+fully local, self-hosted full-text search index. This eliminates most of the
+conceptual weaknesses that come with being a metasearch engine while giving
+you complete control over your data.
+
+I still believe searx was a worthwhile project and I am grateful for everyone
+who contributed and used it.
+
+If the ideas behind searx resonate with you, I invite you to take a look at
+Hister. It may address things you always wanted from a personal search tool.
+
+-------
+
 Searx is no longer maintained. Thank you for your support and all your contributions.
 
 .. figure:: https://raw.githubusercontent.com/searx/searx/master/searx/static/themes/oscar/img/logo_searx_a.png
